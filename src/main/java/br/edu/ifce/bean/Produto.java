@@ -1,5 +1,7 @@
 package br.edu.ifce.bean;
 
+import java.util.ArrayList;
+
 public class Produto {
 
 	private int id;
@@ -39,4 +41,23 @@ public class Produto {
 		this.imagem = imagem;
 	}
 
+	public boolean check(ArrayList<String> listaCarrinho, String id2) {
+		for (String id : listaCarrinho) {
+			if (id.equals(id2))
+				return true;
+		}
+		return false;
+	}
+
+	public ArrayList<String> remove(ArrayList<String> listaCarrinho, String id) {
+		for (String cid : listaCarrinho) {
+			if (cid.equals(id)) {
+				listaCarrinho.remove(cid);
+				break;
+			}
+
+		}
+
+		return listaCarrinho;
+	}
 }
