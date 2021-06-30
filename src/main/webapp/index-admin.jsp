@@ -61,9 +61,11 @@
 			</table>
 		 </c:forEach>
 		 </div>
+		 <!-- 
 	 <footer>
 		<div class="footer"> &copy; Mardonio Rodrigues</div>
 	</footer>
+		 -->
 	
 </body>
 </html>

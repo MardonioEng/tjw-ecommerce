@@ -11,7 +11,7 @@
 <body>
 
 	<div class="signup-header">
-	 	<h2> <mark>Admin</mark> Login</h2>
+	 	<h2>Login - Administrador</h2>
 	</div>
 
 <form method="post" action="AdminController">
@@ -22,11 +22,9 @@
 	 	<font color="#F24638"><c:out value="${msg }"></c:out></font>
 	 
 	 	<div class="signup-group">
-	 		<label>Nome de usuário</label>
 	 		<input type="text" name="username" placeholder="Seu nome de usuário" value="<c:out value="${username }"></c:out>">
 	 	</div>
 	 	<div class="signup-group">
-	 		<label>Senha</label>
 	 		<input type="password" name="senha" placeholder="Sua senha de administrador">
 	 	</div>
 	 	<div class="signup-group">

@@ -117,6 +117,7 @@ public class OperacaoDB {
 
 			st.setString(1, p.getNome());
 			st.setString(2, p.getValor());
+			st.setString(3, "no");
 			st.setString(4, p.getImagem());
 
 			st.executeUpdate();

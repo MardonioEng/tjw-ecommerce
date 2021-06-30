@@ -16,9 +16,11 @@
 	</c:forEach>
 
 <header>
+		<!-- 
 		<h1>
 			BookStore
 		</h1>
+		 -->
 		<nav>
 			<ul>
 				<li><a href="Controller?page=index">Home</a></li>
@@ -64,8 +66,10 @@
 	 	</p>
 	 </form>
 	<br><br><br>
+	<!--
 	<footer style="position: fixed;bottom: 0;left: 0;width: 100%;">
 		<div class="footer"> &copy; Mardonio Rodrigues</div>
 	</footer>
+	 -->
 </body>
 </html>

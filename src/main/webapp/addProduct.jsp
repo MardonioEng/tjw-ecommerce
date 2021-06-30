@@ -54,9 +54,10 @@
 			<input type="submit" value="Process">	 
 		</div>
 	 </form>
-	
+	<!-- 
 	 <footer style="position: absolute; left: 0; bottom: 0; width: 100%;">
 		<div class="footer"> &copy; Mardonio Rodrigues</div>
 	</footer>
+	 -->
 </body>
 </html>
