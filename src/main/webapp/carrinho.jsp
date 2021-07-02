@@ -27,7 +27,7 @@
 		 -->
 		<nav>
 			<ul>
-				<li><a href="Controller?page=index">Home</a></li>
+				<li><a href="Controller?page=home">Home</a></li>
 				<c:choose>
 					<c:when test="${session == null}">
 						<li><a href="Controller?page=login">Login</a></li>
@@ -121,7 +121,7 @@
 			</c:when>
 		</c:choose>
 
-		<a href="Controller?page=index"><input type="button"
+		<a href="Controller?page=home"><input type="button"
 			value="Continue comprando" class="btn btn-warning"
 			style="padding: 8px; font-size: 16px; width: 170px; background-color: orange;"></a>
 

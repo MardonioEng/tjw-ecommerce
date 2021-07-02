@@ -41,7 +41,7 @@ public class Controller extends HttpServlet {
 			throws ServletException, IOException {
 		String page = request.getParameter("page");
 
-		if (page == null || page.equals("index")) {
+		if (page == null || page.equals("home")) {
 
 			OperacaoDB operacao = new OperacaoDB();
 
@@ -56,7 +56,7 @@ public class Controller extends HttpServlet {
 			session.setAttribute("listaCarrinho", listaCarrinho);
 			session.setAttribute("listaProdutos", listaProdutos);
 
-			request.getRequestDispatcher("index.jsp").forward(request, response);
+			request.getRequestDispatcher("home.jsp").forward(request, response);
 
 		} else {
 			doPost(request, response);
@@ -76,7 +76,7 @@ public class Controller extends HttpServlet {
 		}
 
 		if (page.equals("sign-up")) {
-			request.getRequestDispatcher("signup.jsp").forward(request, response);
+			request.getRequestDispatcher("registro.jsp").forward(request, response);
 		}
 
 		if (page.equals("sign-up-form")) {
@@ -108,7 +108,7 @@ public class Controller extends HttpServlet {
 			} else {
 				request.setAttribute("msg", "As senha não coincidem!");
 				request.setAttribute("username", username);
-				request.getRequestDispatcher("signup.jsp").forward(request, response);
+				request.getRequestDispatcher("registro.jsp").forward(request, response);
 			}
 
 		}
@@ -140,7 +140,7 @@ public class Controller extends HttpServlet {
 				}
 
 				session.setAttribute("username", username);
-				request.getRequestDispatcher("index.jsp").forward(request, response);
+				request.getRequestDispatcher("home.jsp").forward(request, response);
 
 			} else {
 				request.setAttribute("msg", "Usuário e/ou senha incorreto(s)");
@@ -159,7 +159,7 @@ public class Controller extends HttpServlet {
 			session.setAttribute("listaCarrinho", listaCarrinho);
 			session.setAttribute("listaProdutos", listaProdutos);
 
-			request.getRequestDispatcher("index.jsp").forward(request, response);
+			request.getRequestDispatcher("home.jsp").forward(request, response);
 		}
 
 		if (page.equals("showcart")) {
@@ -183,7 +183,7 @@ public class Controller extends HttpServlet {
 						JOptionPane.INFORMATION_MESSAGE);
 			}
 
-			request.getRequestDispatcher("index.jsp").forward(request, response);
+			request.getRequestDispatcher("home.jsp").forward(request, response);
 		}
 
 		if(page.equals("finalizarCompra_1")) {

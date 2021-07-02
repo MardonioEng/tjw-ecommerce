@@ -12,16 +12,18 @@
 </head>
 <body>
 	<header>
+	<!-- 
 		<h1>
 			Tela do Administrador
 		</h1>
+		-->
 		<nav>
 			<ul>
-				<li><a href="AdminController?page=index-admin">Home</a></li>
-				<li><a href="AdminController?page=addproduct">Add Producto</a></li>
+				<li><a href="AdminController?page=home-admin">Home</a></li>
+				<li><a href="AdminController?page=addproduct">Adicionar Produto</a></li>
 <!-- 				<li><a href="#">Settings</a></li> -->
 <!-- 				<li><a href="#">Pages</a></li> -->
-			</ul>
+		</ul>
 		</nav>
 	</header>
 	
@@ -54,8 +56,8 @@
 					<td style="width: 100px;"><c:out value="${row.valor }"></c:out></td>
 					<td style="width: 100px;"><img src="${row.imagem}" height="100" width="150" ></td>
 					<td style="width: 100px;">
-					<a href="<%= request.getContextPath() %>/AdminController?page=edit&id=${row.id}" style="color: #6bb1f8;">Edit</a> |
-					<a href="<%= request.getContextPath() %>/AdminController?page=delete&id=${row.id}" style="color:#6bb1f8;">Delete</a>
+					<a href="<%= request.getContextPath() %>/AdminController?page=edit&id=${row.id}" style="color: black;">Edit</a> |
+					<a href="<%= request.getContextPath() %>/AdminController?page=delete&id=${row.id}" style="color: black;">Delete</a>
 					</td>
 				</tr>
 			</table>

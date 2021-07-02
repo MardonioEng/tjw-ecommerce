@@ -27,7 +27,7 @@
 		 -->
 		<nav>
 			<ul>
-				<li><a href="Controller?page=index">Home</a></li>
+				<li><a href="Controller?page=home">Home</a></li>
 				<c:choose>
 					<c:when test="${session == null}">
 						<li><a href="Controller?page=login">Login</a></li>

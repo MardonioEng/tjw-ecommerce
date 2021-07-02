@@ -33,7 +33,7 @@ public class AdminController extends HttpServlet {
 			String senha = request.getParameter("senha");
 			
 			if(username.equals("admin") && senha.equals("admin")) {
-				request.getRequestDispatcher("index-admin.jsp").forward(request, response);
+				request.getRequestDispatcher("home-admin.jsp").forward(request, response);
 
 			}
 			else {
@@ -52,15 +52,15 @@ public class AdminController extends HttpServlet {
 			try {
 				
 				operacao.deleteProductById(id);
-				request.getRequestDispatcher("index-admin.jsp").forward(request, response);
+				request.getRequestDispatcher("home-admin.jsp").forward(request, response);
 				
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
 		
-		if(page.equals("index-admin")) {
-			request.getRequestDispatcher("index-admin.jsp").forward(request, response);
+		if(page.equals("home-admin")) {
+			request.getRequestDispatcher("home-admin.jsp").forward(request, response);
 		}
 		
 		if(page.equals("addproduct")) {
@@ -106,7 +106,7 @@ public class AdminController extends HttpServlet {
 			try {
 				
 				operacao.updateProduct(p);
-				request.getRequestDispatcher("index-admin.jsp").forward(request, response);
+				request.getRequestDispatcher("home-admin.jsp").forward(request, response);
 				
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -135,7 +135,7 @@ public class AdminController extends HttpServlet {
 			OperacaoDB operacao = new OperacaoDB();
 			try {
 				operacao.addProduct(p);
-				request.getRequestDispatcher("index-admin.jsp").forward(request, response);
+				request.getRequestDispatcher("home-admin.jsp").forward(request, response);
 				
 			} catch (Exception e) {
 				

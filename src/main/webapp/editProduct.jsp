@@ -17,7 +17,7 @@
 		</h1>
 		<nav>
 			<ul>
-				<li><a href="AdminController?page=index-admin">Home</a></li>
+				<li><a href="AdminController?page=home-admin">Home</a></li>
 				<li><a href="AdminController?page=addproduct">Adicionar Produto</a></li>
 <!-- 				<li><a href="#">Settings</a></li> -->
 <!-- 				<li><a href="#">Pages</a></li> -->

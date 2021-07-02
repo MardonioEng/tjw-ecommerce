@@ -12,12 +12,9 @@
 </head>
 <body>
 	<header>
-		<h1>
-			Administrador
-		</h1>
 		<nav>
 			<ul>
-				<li><a href="AdminController?page=index-admin">Home</a></li>
+				<li><a href="AdminController?page=home-admin">Home</a></li>
 				<li><a href="AdminController?page=addproduct">Adicionar produto</a></li>
 <!-- 				<li><a href="#">Settings</a></li> -->
 <!-- 				<li><a href="#">Pages</a></li> -->
@@ -47,8 +44,8 @@
 	 		<input type="text" name="featured" placeholder="yes/no" required>
 	 	</div>
 	 	<div class="signup-group">
-	 		 <label for="fileupload">Nome da Imagem (ex: img/imagem.jpg)</label>
-	 		<input type="text" name="imagem" placeholder="Nome da imagem do diretório img"><br>
+	 		 <label for="fileupload">Path da Imagem</label>
+	 		<input type="text" name="imagem" placeholder="Nome do diretório da imagem"><br>
 	 	</div>
 	 	<div class="signup-group">
 			<input type="submit" value="Process">	 
