@@ -27,3 +27,11 @@ Tela Carrinho de compras
 Tela Home Administrador
 
 ![](https://github.com/MardonioEng/tjw-ecommerce/blob/main/fotos-sistema/home-administrador.png)
+
+##### Acesso ao sistema
+
+- Para logar como usuário deve-se executar o arquivo *src/main/webapp/login.jsp*
+  - Username/Password: mardonio
+- Para logar como administrador deve-se executar o arquivo *src/main/webapp/admin-login.jsp*
+  - Username/Password: admin
+
