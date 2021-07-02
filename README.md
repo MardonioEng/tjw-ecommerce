@@ -4,6 +4,10 @@
 
 ------
 
+O sistema de faz uso de um banco de dados implementado em MySQL com duas tabelas: Produto e Usuario
+
+------
+
 
 
 - **Telas do App**:
